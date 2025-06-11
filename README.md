@@ -21,7 +21,9 @@ Este proyecto es una plataforma educativa inspirada en modelos como **Platzi**, 
 
 ## 🗂️ Estructura del proyecto
 
+### 🗂️ Estructura del proyecto
 
+```bash
 tutorvirtual/
 ├── index.php
 ├── login.php
@@ -39,6 +41,8 @@ tutorvirtual/
 ├── css/
 ├── js/
 └── README.md
+```
+
 
 
 
