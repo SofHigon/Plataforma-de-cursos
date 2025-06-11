@@ -1,0 +1,17 @@
+<ul>
+    <li><a href="index.php">Inicio</a></li>
+    <li><a href="Conceptos.php">Conceptos</a></li>
+    <li><a href="condicionales.php">Condicionales</a></li>
+    <li><a href="ciclos.php">Ciclos</a></li>
+    <li><a href="funciones.php">Funciones</a></li>
+    <li><a href="temas-estudiante.php">Cursos</a></li>
+    <li><a href="Vectores.php">Vectores</a></li>
+    <li><a href="Matrices.php">Matrices</a></li>
+    <li><a href="archivos.php">Archivos</a></li>
+    <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] === 'admin'): ?>
+    <li><a href="registro.php">Ver registros</a></li>
+    <?php endif; ?>
+    <li><a href="mis-pagos.php"> Mis Pagos</a></li>
+    <li><a href="docentes-listado.php">Docentes</a></li>
+    <li><a href="cerrar.php">Cerrar Sesión</a></li>
+</ul>

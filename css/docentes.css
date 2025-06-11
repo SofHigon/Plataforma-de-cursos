@@ -1,0 +1,293 @@
+/* Fuente general y fondo */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  background-image: url("../imagenes/image.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  background-color: #0f172a;
+  color: #ffffff;
+  padding-bottom: 70px;
+  min-height: 100vh;
+}
+
+/* Encabezado con título */
+h1 {
+  text-align: center;
+  background-color: #0f172a;
+  color: #38bdf8; /* azul claro */
+  font-size: 1.8rem;
+  padding: 2rem 0 0.9rem;
+  margin: 0;
+}
+
+/* Menú horizontal tipo barra */
+nav {
+  background-color: #0f172a;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+  border-top: 1px solid #1e293b;
+  border-bottom: 1px solid #1e293b;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #e0f2fe;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: transparent; /* Elimina el fondo */
+  color: #38bdf8;
+}
+
+#titulo-intermedio {
+  text-align: center;
+  color: #ffffff !important;
+  font-size: 1.5rem;
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  border: none !important;
+  background: transparent !important;
+}
+
+
+
+/* Cuadros semitransparentes */
+section,
+aside {
+  background-color: rgba(15, 23, 42, 0.85);
+  padding: 1.2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  transition: transform 0.2s ease;
+}
+
+section:hover,
+aside:hover {
+  transform: translateY(-3px);
+}
+
+
+
+/*c*/
+
+.formulario-curso {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: rgba(15, 23, 42, 0.85);
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+}
+
+.formulario-curso label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #e0f2fe;
+}
+
+.formulario-curso input,
+.formulario-curso textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e293b;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.formulario-curso input:focus,
+.formulario-curso textarea:focus {
+  outline: 2px solid #38bdf8;
+}
+
+.formulario-curso button {
+  background-color: #38bdf8;
+  color: #0f172a;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-curso button:hover {
+  background-color: #0ea5e9;
+  color: #ffffff;
+}
+
+.mensaje {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+/*perfil*/
+/* Contenedor del perfil */
+.perfil-container {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+/* Tarjeta del perfil */
+.perfil-card {
+  background-color: rgba(15, 23, 42, 0.8); /* fondo oscuro translúcido */
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  max-width: 900px;
+  width: 100%;
+  gap: 2rem;
+  color: #e2e8f0;
+  backdrop-filter: blur(6px); /* para dar efecto de vidrio */
+}
+
+/* Imagen del perfil */
+.perfil-img img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+  background-color: #1e293b;
+}
+
+/* Información del perfil */
+.perfil-info {
+  flex: 1;
+}
+
+.perfil-info h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #38bdf8;
+}
+
+.perfil-info p {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  color: #e0f2fe;
+}
+
+/* Descripción del docente */
+.descripcion {
+  margin-top: 1rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+.descripcion.vacia {
+  font-style: normal;
+  color: #94a3b8;
+}
+
+/* Botón de edición */
+.btn-editar {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #38bdf8;
+  color: #0f172a;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-editar:hover {
+  background-color: #0ea5e9;
+}
+
+
+/*editar-perfil*/
+
+.formulario-contenedor {
+  background-color: #f1f5f9;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  color: #1e293b;
+}
+
+/* Etiquetas del formulario */
+.formulario-contenedor label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  margin-top: 1.2rem;
+}
+
+/* Campos de entrada */
+.formulario-contenedor input[type="text"],
+.formulario-contenedor textarea,
+.formulario-contenedor input[type="file"] {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.2rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #ffffff;
+  color: #1e293b;
+  box-sizing: border-box;
+}
+
+/* Botón de guardar cambios */
+.formulario-contenedor button {
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #38bdf8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.formulario-contenedor button:hover {
+  background-color: #0ea5e9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .formulario-contenedor {
+    margin: 2rem 1rem;
+    padding: 2rem 1.5rem;
+  }
+}

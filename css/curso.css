@@ -1,0 +1,179 @@
+/* Fuente general y fondo */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  background-image: url("../imagenes/image.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  background-color: #0f172a;
+  color: #ffffff;
+  padding-bottom: 70px;
+  min-height: 100vh;
+}
+
+/* Encabezado con título */
+h1 {
+  text-align: center;
+  background-color: #0f172a;
+  color: #38bdf8; /* azul claro */
+  font-size: 1.8rem;
+  padding: 2rem 0 0.9rem;
+  margin: 0;
+}
+
+/* Menú horizontal tipo barra */
+nav {
+  background-color: #0f172a;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+  border-top: 1px solid #1e293b;
+  border-bottom: 1px solid #1e293b;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #e0f2fe;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: transparent; /* Elimina el fondo */
+  color: #38bdf8;
+}
+
+#titulo-intermedio {
+  text-align: center;
+  color: #ffffff !important;
+  font-size: 1.5rem;
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  border: none !important;
+  background: transparent !important;
+}
+
+
+
+/* Cuadros semitransparentes */
+section,
+aside {
+  background-color: rgba(15, 23, 42, 0.85);
+  padding: 1.2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  transition: transform 0.2s ease;
+}
+
+section:hover,
+aside:hover {
+  transform: translateY(-3px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+section {
+  background-color: rgba(15, 23, 42, 0.92);
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5);
+}
+
+section h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #dbeafe;
+}
+
+/* Botón para ver estudiantes */
+button {
+  background-color: #1e40af;
+  color: #e0f2fe;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #2563eb;
+  transform: scale(1.03);
+}
+
+/* Lista de estudiantes (inicialmente oculta) */
+.estudiantes {
+  display: none;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid #38bdf8;
+}
+
+.estudiantes ul {
+  padding-left: 1rem;
+  margin: 0;
+  list-style: disc;
+}
+
+.estudiantes li {
+  margin-bottom: 0.3rem;
+  color: #f1f5f9;
+  font-size: 0.95rem;
+}
+
+/* Para el mensaje cuando no hay estudiantes */
+.estudiantes p {
+  font-style: italic;
+  color: #94a3b8;
+}

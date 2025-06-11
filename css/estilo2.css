@@ -1,0 +1,42 @@
+header {
+  background-color: #333; /* Color de fondo */
+  height: 40px; /*altura del header */
+}
+nav {
+  float: left; /* navegacion a la izquierda*/
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+}
+
+nav ul {
+  list-style: none; /*Sin viñetas*/
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left; /* horizontal izquierda a drecha */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+nav ul li a {
+  display: block; /*convertiremos en un bloque*/
+  padding: 20px; /*damos espacio*/
+  color: #fff;
+  text-decoration: none; /* Quito subrayado */
+}
+
+nav ul li :hover {
+  background-color: #eca023;
+}
+
+#sombrita {
+  box-shadow: -5px 0px 30px #eca023;
+  height: 100px;
+  background-color: antiquewhite;
+
+  /*  6px indica el número de píxeles que se desviará la sombra horizontalmente.
+         20px, especifica el número de píxeles que se moverá la sombra verticalmente.
+         El tercer valor (10px), es la suavidad que tendrá la sombra (a menor valor más duro será el borde de la sombra).
+      */
+}

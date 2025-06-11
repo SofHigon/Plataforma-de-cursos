@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Tutor Virtual </title>
+          <link rel="stylesheet" href="css/matricularse.css">
+          <link
+               href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+               rel="stylesheet">
+          <style>
+            button[type="submit"] {
+    display: block !important;
+    padding: 1rem 10rem !important;
+    background: linear-gradient(135deg, #2563eb, #1e40af) !important;
+    color: white !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    font-size: 1rem !important;
+    border: none !important;
+    cursor: pointer !important;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3) !important;
+    transition: all 0.3s ease !important;
+    margin: 1rem auto !important; /* Esto lo centra horizontalmente */
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #1e40af, #2563eb) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4) !important;
+}
+
+
+          </style>
+     </head>
+     <body>
+          <header>
+               <h1>Curso Profesional de PHP</h1>
+          </header>
+          <nav>
+
+               <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="iniciar-sesion.html">Matricularse</a></li>
+                    <li><a href="temas-publicos.php">Cursos</a></li>
+                    <li><a href="Galeria.html">Galería</a></li>
+                    <li><a href="Creadores.html">Creadores</a></li>
+               </ul>
+
+          </nav>
+
+          <section class="formulario">
+               <form action="verificacion.php" method="post">
+                    <div class="form-header">
+                         <img src="imagenes/usuario (1).png" alt="Login"
+                              class="icono-login">
+                         <h2>Iniciar sesión</h2>
+                    </div>
+
+                    <label for="usuario">Usuario</label>
+                    <input type="text" name="usuario" id="usuario" required>
+
+                    <label for="clave">Contraseña</label>
+                    <input type="password" name="clave" id="clave" required>
+
+                    <button type="submit">Entrar</button>
+
+                    <div class="form-links">
+                         <a href="registrar.html">¿No tienes cuenta?
+                              Regístrate</a>
+                    </div>
+
+               </form>
+          </section>
+
+          <footer>
+               &copy; 2025 Tutor Virtual PHP - Aprende programando.
+          </footer>
+
+     </body>
+</html>

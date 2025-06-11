@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutor Virtual</title>
+  <link rel="stylesheet" href="css/matricularse.css">
+  <style>
+    label[for="rol"]{display:block;margin-bottom:0.4rem;font-weight:500;color:#94a3b8;font-size:1rem;font-family:sans-serif;}
+    select#rol{width:90%;padding:0.75rem 1rem;margin:0 auto 1.2rem;display:block;background:#1e293b;border:1px solid #94a3b880;border-radius:10px;color:#f0f9ff;font-size:0.95rem;font-family:sans-serif;transition:.3s;outline:none;cursor:pointer;}
+    select#rol:focus{border-color:#38bdf8;box-shadow:0 0 6px #38bdf866;background:#1e293b;}
+    button[type="submit"]{display:block;padding:1rem 4rem;background:#2563eb;color:#fff;font-weight:600;border-radius:8px;font-size:1rem;border:none;cursor:pointer;box-shadow:0 4px 15px #2563eb4d;margin:1rem auto;transition:.3s;}
+  </style>
+</head>
+<body>
+  <header><h1>Curso Profesional de PHP</h1></header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="iniciar-sesion.html">Matricularse</a></li>
+      <li><a href="temas-publicos.php">Cursos</a></li>
+      <li><a href="Galeria.html">Galería</a></li>
+      <li><a href="Creadores.html">Creadores</a></li>
+    </ul>
+  </nav>
+  <section class="formulario">
+    <form action="registrar.php" method="post">
+      <div class="form-header">
+        <img src="imagenes/usuario (1).png" alt="Registro" class="icono-login">
+        <h2>Registrarse</h2>
+      </div>
+      <label for="nombre">Nombre</label>
+      <input placeholder="Escribe tu nombre" type="text" name="nombre" id="nombre" required>
+      <label for="apellido">Apellido</label>
+      <input placeholder="Escribe tu apellido" type="text" name="apellido" id="apellido" required>
+      <label for="usuario">Nombre de usuario</label>
+      <input placeholder="Ej: usuario1234" type="text" name="usuario" id="usuario" required>
+      <label for="clave">Contraseña</label>
+      <input placeholder="Escribe tu contraseña" type="password" name="clave" id="clave" required>
+      <label for="rol">Tipo de usuario</label>
+      <select name="rol" id="rol" required>
+        <option value="estudiante" selected>Estudiante</option>
+        <option value="docente">Docente</option>
+      </select>
+      <button type="submit">Crear cuenta</button>
+      <div class="form-links"><a href="iniciar-sesion.html">¿Ya tienes cuenta? Inicia sesión</a></div>
+    </form>
+  </section>
+  <footer>&copy; 2025 Tutor Virtual PHP - Aprende programando.</footer>
+</body>
+</html>

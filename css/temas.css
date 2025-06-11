@@ -1,0 +1,175 @@
+/* Fuente general y fondo */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  background-image: url("../imagenes/image.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  background-color: #0f172a;
+  color: #ffffff;
+  padding-bottom: 70px;
+  min-height: 100vh;
+}
+
+/* Encabezado con título */
+h1 {
+  text-align: center;
+  background-color: #0f172a;
+  color: #38bdf8; /* azul claro */
+  font-size: 1.8rem;
+  padding: 2rem 0 0.9rem;
+  margin: 0;
+}
+
+/* Menú horizontal tipo barra */
+nav {
+  background-color: #0f172a;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+  border-top: 1px solid #1e293b;
+  border-bottom: 1px solid #1e293b;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #e0f2fe;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: transparent; /* Elimina el fondo */
+  color: #38bdf8;
+}
+.contenedor {
+    max-width: 1100px; /* Más ancho */
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Título del curso dentro del contenedor */
+.contenedor h1 {
+    text-align: center;
+    color: #1e293b; /* Gris azulado oscuro */
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+/* Acordeón */
+.acordeon-item {
+    border-bottom: 1px solid #cbd5e1;
+    margin-bottom: 16px;
+}
+
+.acordeon-boton {
+    background: #0f172a;
+    color: white;
+    cursor: pointer;
+    padding: 18px 24px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 1.15rem;
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    transition: all 0.3s ease;
+}
+
+.acordeon-boton:hover {
+    background: #0f172a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+.acordeon-contenido {
+    padding: 20px 30px;
+    display: none;
+    background-color: #f8fafc; /* Azul muy claro */
+    border-radius: 10px;
+    margin-top: 12px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #334155; /* Gris azulado oscuro */
+}
+
+.acordeon-contenido pre {
+    background: #e2e8f0; /* Fondo más suave */
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.95rem;
+    color: #0f172a;
+    font-family: 'Courier New', monospace;
+    border-left: 4px solid #2563eb;
+}
+
+table {
+    width: 90%; /* un poco más estrecha para que quede centrada */
+    max-width: 900px; /* límite de ancho máximo */
+    margin: 20px auto; /* margen vertical y centrado horizontal */
+    border-collapse: collapse;
+    border: 1px solid #cbd5e1;
+    background-color: #1e293b; /* fondo azul gris oscuro */
+    color: #e0f2fe; /* texto azul claro para contraste */
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #334155; /* borde azul gris oscuro más visible */
+    text-align: left;
+}
+
+th {
+    background-color: #2563eb; /* azul vibrante para encabezados */
+    color: #f8fafc; /* texto muy claro */
+    font-weight: 600;
+}
+
+.estado-pendiente {
+    color: #60a5fa; /* azul claro para pendiente */
+    font-weight: 700;
+}
+
+.estado-pagado {
+    color: #3b82f6; /* azul más intenso para pagado */
+    font-weight: 700;
+}
+
+
+footer {
+  background-color: rgba(30, 41, 59, 0.9);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  position: fixed; /* Lo fija en la parte inferior */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100; /* Asegura que esté por encima de otros elementos */
+}
+
